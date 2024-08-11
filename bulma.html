@@ -1,0 +1,143 @@
+<!-- Bulma is a modern CSS framework based on Flexbox,
+  designed to be easy to use and highly customizable. 
+  It provides a set of responsive, mobile-first design 
+  components that help you build clean and modern user
+   interfaces without writing a lot of custom CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bookstore</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .hero {
+            background-image: url('bg.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .book-item {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .book-item img {
+            width: 100%;
+        }
+        .book-item .content {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar is-primary">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <strong>Bookstore</strong>
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#">Home</a>
+                <a class="navbar-item" href="#">Books</a>
+                <a class="navbar-item" href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-large">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Welcome to Our Bookstore</h1>
+                <h2 class="subtitle">Find your next great read</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book List Section -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <!-- Book Item 1 -->
+                <div class="column is-one-quarter">
+                    <div class="book-item">
+                        <img src="tgg.jpeg" alt="Book 1"> <!-- Replace with book cover image -->
+                        <div class="content">
+                            <h3 class="title is-5">The Great Gatsby</h3>
+                            <p class="subtitle is-6">F. Scott Fitzgerald</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.</p>
+                            <a href="#" class="button is-primary">More Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book Item 2 -->
+                <div class="column is-one-quarter">
+                    <div class="book-item">
+                        <img src="tkmb.jpeg" alt="Book 2"> <!-- Replace with book cover image -->
+                        <div class="content">
+                            <h3 class="title is-5">To Kill a Mockingbird</h3>
+                            <p class="subtitle is-6">Harper Lee</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.</p>
+                            <a href="#" class="button is-primary">More Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book Item 3 -->
+                <div class="column is-one-quarter">
+                    <div class="book-item">
+                        <img src="1984.jpeg" alt="Book 3"> <!-- Replace with book cover image -->
+                        <div class="content">
+                            <h3 class="title is-5">1984</h3>
+                            <p class="subtitle is-6">George Orwell</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.</p>
+                            <a href="#" class="button is-primary">More Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book Item 4 -->
+                <div class="column is-one-quarter">
+                    <div class="book-item">
+                        <img src="tcitr.jpeg" alt="Book 4"> <!-- Replace with book cover image -->
+                        <div class="content">
+                            <h3 class="title is-5">The Catcher in the Rye</h3>
+                            <p class="subtitle is-6">J.D. Salinger</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.</p>
+                            <a href="#" class="button is-primary">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 Bookstore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script to handle the navbar burger toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById(burger.dataset.target);
+
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>
