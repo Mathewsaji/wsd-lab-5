@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bookstore.xsl"?>
+<?xml-model href="bookstore.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<bookstore>
+  <book id="1">
+    <title>The Great Gatsby</title>
+    <author>F. Scott Fitzgerald</author>
+    <publisher>Scribner</publisher>
+    <price>19.99</price>
+    <year>1925</year>
+  </book>
+  <book id="2">
+    <title>To Kill a Mockingbird</title>
+    <author>Harper Lee</author>
+    <publisher>J.B. Lippincott &amp; Co.</publisher>
+    <price>14.99</price>
+    <year>1960</year>
+  </book>
+  <book id="3">
+    <title>1984</title>
+    <author>George Orwell</author>
+    <publisher>Secker and Warburg</publisher>
+    <price>12.99</price>
+    <year>1949</year>
+  </book>
+  <book id="4">
+    <title>The Catcher in the Rye</title>
+    <author>J.D. Salinger</author>
+    <publisher>Little, Brown and Company</publisher>
+    <price>10.99</price>
+    <year>1951</year>
+  </book>
+  <book id="5">
+    <title>Pride and Prejudice</title>
+    <author>Jane Austen</author>
+    <publisher>T. Egerton</publisher>
+    <price>15.99</price>
+    <year>1813</year>
+  </book>
+  <book id="6">
+    <title>The Lord of the Rings</title>
+    <author>J.R.R. Tolkien</author>
+    <publisher>Allen &amp; Unwin</publisher>
+    <price>24.99</price>
+    <year>1954</year>
+  </book>
+  <book id="7">
+    <title>The Hunger Games</title>
+    <author>Suzanne Collins</author>
+    <publisher>Scholastic Press</publisher>
+    <price>16.99</price>
+    <year>2008</year>
+  </book>
+  <book id="8">
+    <title>The Da Vinci Code</title>
+    <author>Dan Brown</author>
+    <publisher>Doubleday</publisher>
+    <price>18.99</price>
+    <year>2003</year>
+  </book>
+</bookstore>
